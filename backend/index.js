@@ -3,6 +3,10 @@ import { sequelize } from "./src/database/db.js"
 
 const PORT = 3000
 
+//Models
+import "./src/models/Productos.models.js";
+import "./src/models/Usuarios.models.js"
+
 const main = async() =>{
     try {
         await sequelize.authenticate()
